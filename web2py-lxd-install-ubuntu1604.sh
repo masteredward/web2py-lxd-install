@@ -10,9 +10,9 @@ apt full-upgrade -y
 apt autoremove -y
 apt install apache2 libapache2-mod-wsgi unzip -y
 cd /etc/apache2/conf-available
-wget https://raw.githubusercontent.com/masteredward/web2py-lxd-install/master/ubuntu1710/rewrite-ssl.conf
+wget https://raw.githubusercontent.com/masteredward/web2py-lxd-install/master/ubuntu1604/rewrite-ssl.conf
 cd /etc/apache2/sites-available
-wget https://raw.githubusercontent.com/masteredward/web2py-lxd-install/master/ubuntu1710/web2py.conf
+wget https://raw.githubusercontent.com/masteredward/web2py-lxd-install/master/ubuntu1604/web2py.conf
 cd /srv
 wget https://mdipierro.pythonanywhere.com/examples/static/web2py_src.zip
 unzip web2py_src.zip
